@@ -3204,3 +3204,13 @@ h1 {
 	transition: right 1s;
 	position: relative;
 }
+
+.anim-block__item:nth-child(2) {
+	opacity: 0;
+	transition: opacity 4s;
+}
+
+.anim-block__item:nth-child(3) {
+	opacity: 0;
+	transition: 8s;
+}
