@@ -1,6 +1,7 @@
 var element_right = [];
 var element_left = [];
 var element_bot = [];
+var anim_box = document.querySelectorAll(".anim-block__item");
 
 element_bot[0] = document.querySelector(".new-are__text-block-bot-anim");
 element_bot[1] = document.querySelector(".card-andrey-anim");
@@ -93,19 +94,19 @@ window.onscroll = function () {
 
 
 
-	if ( scrollTop >= 680 && w <= 1061 ) {
+	if ( scrollTop >= 800 && w <= 1061 ) {
 		element_bot[0].style.bottom = '0px';
 	}
 
-	if ( scrollTop >= 2875 && w <= 1061 ) {
+	if ( scrollTop >= 3160 && w <= 1061 ) {
 		element_bot[1].style.bottom = '0px';
 	}
 
-	if ( scrollTop >= 5130 && w <= 1061 ) {
+	if ( scrollTop >= 5530 && w <= 1061 ) {
 		element_bot[2].style.bottom = '0px';
 	}
 
-	if ( scrollTop >= 5735 && w <= 1061 ) {
+	if ( scrollTop >= 6030 && w <= 1061 ) {
 		element_bot[3].style.bottom = '0px';
 	}
 
@@ -130,6 +131,8 @@ window.onscroll = function () {
 	if ( scrollTop >= 1800 && w >= 1561 ) {
 		element_left[0].style.left = '0px';
 		element_left[0].style.bottom = '0px';
+		anim_box[1].style.opacity = '1';
+		anim_box[2].style.opacity = '1';
 	}
 
 	if ( scrollTop >= 2650 && w >= 1561 ) {
@@ -172,6 +175,8 @@ window.onscroll = function () {
 	if ( scrollTop >= 2170 && w <= 1560 && w >= 1061 ) {
 		element_left[0].style.left = '0px';
 		element_left[0].style.bottom = '0px';
+		anim_box[1].style.opacity = '1';
+		anim_box[2].style.opacity = '1';
 	}
 
 	if ( scrollTop >= 3076 && w <= 1560 && w >= 1061 ) {
@@ -204,43 +209,45 @@ window.onscroll = function () {
 
 
 
-	if ( scrollTop >= 2100 && w <= 1061 ) {
+	if ( scrollTop >= 2400 && w <= 1061 ) {
 		element_left[6].style.transition = 'bottom 1s';
 		element_left[6].style.bottom = '0px';
 		element_left[6].style.left = '0px';
 	}
 
-	if ( scrollTop >= 1077 && w <= 1061 ) {
+	if ( scrollTop >= 1200 && w <= 1061 ) {
 		element_left[7].style.transition = 'bottom 1s';
 		element_left[7].style.bottom = '0px';
 		element_left[7].style.left = '0px';
 	}
 
-	if ( scrollTop >= 2578 && w <= 1061 ) {
+	if ( scrollTop >= 2780 && w <= 1061 ) {
 		element_left[0].style.transition = 'bottom 1s';
 		element_left[0].style.bottom = '0px';
 		element_left[0].style.left = '0px';
+		anim_box[1].style.opacity = '1';
+		anim_box[2].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 4200 && w <= 1061 ) {
+	if ( scrollTop >= 4500 && w <= 1061 ) {
 		element_left[4].style.transition = 'bottom 1s';
 		element_left[4].style.bottom = '0px';
 		element_left[4].style.left = '0px';
 	}
 
-	if ( scrollTop >= 3530 && w <= 1061 ) {
+	if ( scrollTop >= 3850 && w <= 1061 ) {
 		element_left[5].style.transition = 'bottom 1s';
 		element_left[5].style.bottom = '0px';
 		element_left[5].style.left = '0px';
 	}
 
-	if ( scrollTop >= 4483 && w <= 1061 ) {
+	if ( scrollTop >= 4730 && w <= 1061 ) {
 		element_left[3].style.transition = 'bottom 1s';
 		element_left[3].style.bottom = '0px';
 		element_left[3].style.left = '0px';
 	}
 
-	if ( scrollTop >= 6170 && w <= 1061 ) {
+	if ( scrollTop >= 6630 && w <= 1061 ) {
 		element_left[2].style.transition = 'bottom 1s';
 		element_left[2].style.bottom = '0px';
 		element_left[2].style.left = '0px';
@@ -347,43 +354,43 @@ window.onscroll = function () {
 
 
 
-	if ( scrollTop >= 4740 && w <= 1061) {
+	if ( scrollTop >= 5030 && w <= 1061) {
 		element_right[6].style.bottom = '0px';
 		element_right[6].style.transition = 'bottom 1s';
 		element_right[6].style.right = '0px';
 	}
 
-	if ( scrollTop >= 6170 && w <= 1061 ) {
+	if ( scrollTop >= 6630 && w <= 1061 ) {
 		element_right[7].style.bottom = '0px';
 		element_right[7].style.transition = 'bottom 1s';
 		element_right[7].style.right = '0px';
 	}
 
-	if ( scrollTop >= 3170 && w <= 1061 ) {
+	if ( scrollTop >= 3500 && w <= 1061 ) {
 		element_right[0].style.bottom = '0px';
 		element_right[0].style.transition = 'bottom 1s';
 		element_right[0].style.right = '0px';
 	}
 
-	if ( scrollTop >= 3800 && w <= 1061 ) {
+	if ( scrollTop >= 4060 && w <= 1061 ) {
 		element_right[4].style.bottom = '0px';
 		element_right[4].style.transition = 'bottom 1s';
 		element_right[4].style.right = '0px';
 	}
 
-	if ( scrollTop >= 4070 && w <= 1061 ) {
+	if ( scrollTop >= 4280 && w <= 1061 ) {
 		element_right[5].style.bottom = '0px';
 		element_right[5].style.transition = 'bottom 1s';
 		element_right[5].style.right = '0px';
 	}
 
-	if ( scrollTop >= 1770 && w <= 1061 ) {
+	if ( scrollTop >= 2170 && w <= 1061 ) {
 		element_right[2].style.bottom = '0px';
 		element_right[2].style.right = '0px';
 		element_right[2].style.transition = 'bottom 1s';
 	}
 
-	if ( scrollTop >= 1400 && w <= 1061 ) {
+	if ( scrollTop >= 1700 && w <= 1061 ) {
 		element_right[1].style.bottom = '0px';
 		element_right[1].style.transition = 'bottom 1s';
 		element_right[1].style.right = '0px';
@@ -396,6 +403,8 @@ window.onscroll = function () {
 
 	}
 }
+
+
 
 // alert( 'Текущая прокрутка сверху: ' + window.pageYOffset );
 
