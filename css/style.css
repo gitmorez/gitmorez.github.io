@@ -1468,6 +1468,12 @@ h1 {
 		align-items: center;
 	}
 
+	.token-details-btn-1 {
+		padding-top: 13px;
+		padding-bottom: 13px;
+
+	}
+
 	.ethereum-money {
 		margin-top: 30px;
 		padding-bottom: 5px;
@@ -1568,12 +1574,6 @@ h1 {
 
 
 @media screen and (max-width: 850px) {
-
-	.footer-wrap {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
 
 	.footer-menu {
 		display: none;
@@ -2760,8 +2760,8 @@ h1 {
 
 .team-col-1:before {
 	content: '';
-	left: 0;
-	top: 0;
+	left: -10px;
+	top: 20px;
 	position: absolute;
 	display: block;
 	border-radius: 50%;
@@ -2772,9 +2772,31 @@ h1 {
 
 .bg-list {
 	position: absolute;
-	right: 38px;
+	right: 48px;
 	z-index: -1;
-	top: -82px;
+	top: -70px;
+}
+
+
+@media screen and (max-width: 1060px) {
+	.bg-list {
+		position: absolute;
+		right: -250px;
+		z-index: -1;
+		top: -130px;
+	}
+
+	.team-col-1:before {
+		content: '';
+		left: -100px;
+		top: -20px;
+		position: absolute;
+		display: block;
+		border-radius: 50%;
+		background: rgba(173, 210, 255, 0.46);
+		width: 460.07px;
+		height: 460.07px;
+	}
 }
 /*finish style for team*/
 
@@ -2936,6 +2958,14 @@ h1 {
 	background-color: rgba(174, 211, 255, 0.7);
 }
 
+@media screen and (max-width: 1100px) {
+	.footer-wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
 /*finisg style for footer*/
 
 @font-face {
@@ -3038,6 +3068,7 @@ h1 {
 }
 
 .card-evgeny-anim {
+	bottom: -1300px;
 	right: -1300px;
 	transition: right 1s;
 	position: relative;
@@ -3050,6 +3081,7 @@ h1 {
 }
 
 .daily-digest-col-anim {
+	bottom: -1300px;
 	left: -1300px;
 	transition: left 1s;
 	position: relative;
@@ -3062,48 +3094,56 @@ h1 {
 }
 
 .footer__social-links-anim {
+	bottom: -1300px;
 	left: -1300px;
 	transition: left 1s;
 	position: relative;
 }
 
 .team-col-1-anim {
+	bottom: -1300px;
 	left: -1300px;
 	transition: left 1s;
 	position: relative;
 }
 
 .verification__text-left-anim {
+	bottom: -1300px;
 	left: -1300px;
-	transition: 1s;
+	transition: left 1s;
 	position: relative;
 }
 
 .verification-col-1-anim {
+	bottom: -1300px;
 	left: -1300px;
-	transition: 1s;
+	transition: left 1s;
 	position: relative;
 }
 
 .integration-col-1-anim {
+	bottom: -1300px;
 	left: -1300px;
-	transition: 1s;
+	transition: left 1s;
 	position: relative;
 }
 
 .blockchain-col-1-anim {
+	bottom: -1300px;
 	left: -1300px;
-	transition: 1s;
+	transition: left 1s;
 	position: relative;
 }
 
 .tag-clound-wrap-anim {
+	bottom: -1300px;
 	left: -1300px;
 	transition: left 1s;
 	position: relative;
 }
 
 .new-are__text-block-anim {
+	bottom: -1300px;
 	transition: left 1s;
 	left: -1300px;
 	position: relative;
@@ -3111,12 +3151,14 @@ h1 {
 
 
 .people-anim {
+	bottom: -1300px;
 	right: -1300px;
 	transition: right 1s;
 	position: relative; 
 }
 
 .blockchain-col-2-anim {
+	bottom: -1300px;
 	right: -1300px;
 	transition: right 1s;
 	position: relative; 
@@ -3129,30 +3171,35 @@ h1 {
 }
 
 .integration-col-2-anim {
+	bottom: -1300px;
 	right: -1300px;
 	transition: right 1s;
 	position: relative;
 }
 
 .verification-col-2-anim {
+	bottom: -1300px;
 	right: -1300px;
 	transition: right 1s;
 	position: relative;
 }
 
 .ethereum-money-anim {
+	bottom: -1300px;
 	right: -1300px;
 	transition: right 1s;
 	position: relative;
 }
 
 .team-col-2-anim {
+	bottom: -1300px;
 	right: -1300px;
 	transition: right 1s;
 	position: relative;
 }
 
 .footer-lang-anim {
+	bottom: -1300px;
 	right: -1300px;
 	transition: right 1s;
 	position: relative;
