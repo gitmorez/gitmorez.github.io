@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>mondo.one</title>
+	<link rel="stylesheet" href="css/token.css">
+	<link rel="shortcut icon" href="favicon.png" type="image/png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Ubuntu:300,400" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="main-block">
+			<div class="price-block">
+				<div id="root">
+					<h3 class="price-title">Fixed Price after realese</h3>
+				</div>
+				<button class="copy">Copy</button>
+				<span class="price">1 MND = 1.5 USD</span>
+				<div class="price-usd"><b class="b-usd">0.5</b> usd</div>
+				<span class="available">Available 189,732 MND</span>
+				<div class="terms2">By clicking buy tokens you agree to the <b class="terms-b">Terms and Conditions.</b></div>
+			</div>
+			<button class="buy-token">Buy Tokens</button>
+			<span class="terms">By clicking buy tokens you agree to the <b class="terms-b">Terms and Conditions.</b></span>
+			<a href="index-en.html" class="mondo"><b class="mondo-b">mondo.</b>one</a>
+		</div>
+	</div>
+
+	<script>
+		var btn   	  	  = document.querySelector(".buy-token");
+		var terms 	  	  = document.querySelector(".terms");
+		var price 	  	  = document.querySelector(".price");
+		var usd  	  	  = document.querySelector(".price-usd");
+		var title 	  	  = document.querySelector(".price-title");
+		var copy_btn  	  = document.querySelector(".copy");
+		var available 	  = document.querySelector(".available");
+		var terms2    	  = document.querySelector(".terms2");
+ 
+		btn.onclick = function () {
+			terms.style.visibility = 'hidden';
+			price.style.display = 'none';
+			title.style.maxWidth = '323px';
+			usd.style.display = 'none';
+			copy_btn.style.display = 'inline-flex';
+			available.style.display = 'none';
+			terms2.style.display = 'inline-block';
+			title.innerText = "0x86c8f5039abd094e97a32a0a9b93f1009d20aa8a";
+			btn.style.visibility = 'hidden';
+		}
+
+		var copy_text = title.innerText;
+
+		copy_btn.onclick = function () {
+			var ta = document.getElementById('root'); 
+			var range = document.createRange();
+			range.selectNode(ta); 
+			window.getSelection().addRange(range); 
+			
+			try { 
+			  document.execCommand('copy'); 
+			} catch(err) { 
+			  console.log('Can`t copy'); 
+			} 
+			window.getSelection().removeAllRanges();
+		}
+
+	</script>
+</body>
+</html>
