@@ -1313,7 +1313,7 @@ h1 {
 }
 
 .programm__block {
-	cursor: pointer;
+/*	cursor: pointer;*/
 	margin-top: 18px;
 	margin-right: 9px;
 	border-radius: 13px;
@@ -2448,7 +2448,7 @@ h1 {
 
 .token-details {
 	border-radius: 34px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	position: relative;
 	padding-bottom: 24px;
 	background-size: cover;
@@ -2472,7 +2472,18 @@ h1 {
 	z-index: -1;
 	left: -10px;
 	background: url(../img/wave.svg);
+}
 
+.token-details:before {
+	content: '';
+	position: absolute;
+	width: 195px;
+	height: 358px;
+	z-index: -1;
+	top: -40px;
+	right: -120px;
+	transform: rotate(180deg);
+	background: url(../img/l3.svg);
 }
 
 .token-details-row-info {
