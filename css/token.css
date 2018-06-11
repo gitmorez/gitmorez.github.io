@@ -1,0 +1,181 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	overflow: hidden;
+	background-color: #F1F8FF;
+}
+
+.wrapper {
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	width: 99vw;
+	height: 99vh;
+}
+
+.main-block { 
+	position: relative;
+	padding-bottom: 38px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	background-color: #CBE3FF;
+	max-width: 774px;
+	width: 100%;
+	padding-top: 111px;
+	border-radius: 38px;
+}
+
+.main-block:after {
+	content: '';
+	width: 125px;
+	height: 82px;
+	position: absolute;
+	top: -41px;
+	background: url(../img/logo-blue.svg) no-repeat center center;
+}
+
+.price-block {
+	width: 100%;
+	padding-top: 25px;
+	max-width: 380px;
+	border-radius: 26px;
+	background: rgba(70, 111, 155, 0.04);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.copy {
+	border: none;
+	outline: none;
+	display: none;
+	margin-top: 10px;
+	padding-top: 16px;
+	padding-bottom: 14px;
+	padding-left: 79px;
+	padding-right: 77px;
+	font-family: Comfortaa;
+	font-weight: bold;
+	font-size: 3rem;
+	color: #FFFFFF;
+	border: none;
+	cursor: pointer;
+	background: #6580C5;
+	box-shadow: 0px 0px 55px rgba(101, 124, 183, 0.63);
+	border-radius: 15px;
+}
+
+.terms2 {
+	display: none;
+	max-width: 298px;
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+	font-size: 2rem;
+	text-align: center;
+	color: #3A539B;
+	padding-bottom: 39px;
+	padding-top: 28px;
+}
+
+.price-title {
+	word-wrap: break-word;
+	display: inline-block;
+	max-width: 250px;
+	padding-bottom: 9px;
+	font-family: Comfortaa;
+	font-weight: bold;
+	font-size: 2.4rem;
+	text-align: center;
+	color: #6580C5;
+}
+
+.price {
+	padding-bottom: 15px;
+	text-align: center;
+	font-family: Comfortaa;
+	font-weight: bold;
+	font-size: 3rem;
+	color: #6580C5;
+}
+
+.price-usd {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 284px;
+	height: 89px;
+	background: rgba(101, 128, 197, 0.39);
+	border-radius: 26px;
+
+	font-family: Comfortaa;
+	font-weight: bold;
+	font-size: 5rem;
+	color: #fff;
+}
+
+.available {
+	padding-top: 14px;
+	padding-bottom: 18px;
+	font-family: Comfortaa;
+	font-size: 2rem;
+	text-align: center;
+	color: #000000;
+}
+
+.buy-token {
+	outline: none;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	padding-top: 16px;
+	padding-bottom: 14px;
+	padding-left: 32px;
+	padding-right: 32px;
+	font-family: Comfortaa;
+	font-weight: bold;
+	font-size: 3rem;
+	color: #FFFFFF;
+	border: none;
+	cursor: pointer;
+	background: #6580C5;
+	box-shadow: 0px 0px 55px rgba(101, 124, 183, 0.63);
+	border-radius: 15px;
+}
+
+.terms {
+	display: inline-block;
+	max-width: 298px;
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+	font-size: 2rem;
+	text-align: center;
+
+	color: #3A539B;
+}
+
+.terms-b {
+	font-weight: 400;
+}
+
+.mondo {
+	position: absolute;
+	bottom: -52px;
+	font-family: Comfortaa;
+	color: #6580C5;
+	font-size: 3rem;
+	font-weight: 300;
+}
