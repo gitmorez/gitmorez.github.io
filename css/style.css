@@ -227,9 +227,34 @@ h1 {
 	transform: rotate(-37.31deg);
 }
 
+.lepestok {
+	position: absolute;
+	top: 300px;
+	z-index: -11;
+}
+
+.lepestok-2 {
+	right: 50px;
+	top: 300px;
+	z-index: -11;
+	position: absolute;
+}
+
 @media screen and (max-width: 1060px) {
 	.m-nav {
 		display: flex;
+	}
+
+	.lepestok-2 {
+		transform: rotate(60deg);
+		right: 0px;
+		top: 80px;
+		z-index: -11;
+		position: absolute;
+}
+
+	.lepestok {
+		display: none;
 	}
 
 	.desktop-nav {
@@ -291,14 +316,19 @@ h1 {
 
 
 @media screen and (max-width: 414px) {
+	.content__container__list__item:nth-child(5) {
+		position: relative;
+		top: -2px;
+	}
+
 	.content__container__list__item:nth-child(6) {
 		position: relative;
-		top: 1px;
+		top: -4px;
 	}
 
 	.content__container__list__item:nth-child(7) {
 		position: relative;
-		top: 1px;
+		top: -4px;
 	}
 }
 
