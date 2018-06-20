@@ -209,7 +209,7 @@ window.onscroll = function () {
 
 
 
-	if ( scrollTop >= 2400 && w <= 1061 ) {
+	if ( scrollTop >= 2100 && w <= 1061 ) {
 		element_left[6].style.transition = 'bottom 1s';
 		element_left[6].style.bottom = '0px';
 		element_left[6].style.left = '0px';
@@ -221,7 +221,7 @@ window.onscroll = function () {
 		element_left[7].style.left = '0px';
 	}
 
-	if ( scrollTop >= 2780 && w <= 1061 ) {
+	if ( scrollTop >= 2700 && w <= 1061 ) {
 		element_left[0].style.transition = 'bottom 1s';
 		element_left[0].style.bottom = '0px';
 		element_left[0].style.left = '0px';
@@ -390,7 +390,7 @@ window.onscroll = function () {
 		element_right[2].style.transition = 'bottom 1s';
 	}
 
-	if ( scrollTop >= 1630 && w <= 1061 ) {
+	if ( scrollTop >= 1400 && w <= 1061 ) {
 		element_right[1].style.bottom = '0px';
 		element_right[1].style.transition = 'bottom 1s';
 		element_right[1].style.right = '0px';
