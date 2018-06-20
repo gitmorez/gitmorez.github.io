@@ -318,17 +318,17 @@ h1 {
 @media screen and (max-width: 414px) {
 	.content__container__list__item:nth-child(5) {
 		position: relative;
-		top: -2px;
+		top: 0px;
 	}
 
 	.content__container__list__item:nth-child(6) {
 		position: relative;
-		top: -4px;
+		top: 0px;
 	}
 
 	.content__container__list__item:nth-child(7) {
 		position: relative;
-		top: -4px;
+		top: 1px;
 	}
 }
 
