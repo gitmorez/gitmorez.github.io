@@ -14,6 +14,24 @@ body {
 	background-color: #F1F8FF;
 }
 
+@media screen and (max-width: 375px) {
+	.main-block {
+		padding-top: 60px !important;
+	}
+
+	.price-title {
+		max-width: 250px !important;
+	}
+
+	body {
+		overflow-y: scroll;
+	}
+
+	html {
+		font-size: 8px;
+	}
+}
+
 .wrapper {
 	margin: 0 auto;
 	display: flex;
