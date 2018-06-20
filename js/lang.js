@@ -30,7 +30,7 @@ btn.onclick = function () {
 		btn_text.style.position = 'relative';
 		btn_text.style.bottom = '11px';
 	} else {
-		btn_text.style.bottom = '0';
+		btn_text.style.bottom = '1px';
 		def_lang_block.style.display = 'none';
 		list.style.top = '0px';
 		list.style.paddingTop = '12px';
