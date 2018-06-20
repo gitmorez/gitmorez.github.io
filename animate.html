@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<article class="bg-animate">
+		<div class="bg-anim-rect">
+			<div class="anim__cloud"></div>
+			<span class="anim__tag-cloud">Tag Cloud</span>
+			<div class="anim-ball"></div>
+			<img src="img/anim-list.svg" alt="" class="bottom-list">
+			<img src="img/right-list.svg" alt="" class="bottom-right">
+			<span class="anim-request">Request</span>
+			<div class="border"></div>
+			<div class="anim-ball-2"></div>
+			<div class="anim-ball-req"></div>
+			<div class="anim-db">DB</div>
+			<div class="anim-db-ball"></div>
+			<div class="triangle"></div>
+			<div class="result">Result</div>
+		</div>
+	</article>
+
+	<article class="m-bg-animate">
+		<div class="m-bg-anim-rect">
+			<div class="m-anim__cloud"></div>
+			<span class="m-anim__tag-cloud">Tag Cloud</span>
+			<div class="m-anim-ball"></div>
+			<img src="img/anim-list.svg" alt="" class="m-bottom-list">
+			<img src="img/right-list.svg" alt="" class="m-bottom-right">
+			<span class="m-anim-request">Request</span>
+			<div class="m-border"></div>
+			<div class="m-border-2"></div>
+			<div class="m-anim-ball-2"></div>
+			<div class="m-anim-ball-req"></div>
+			<div class="m-anim-db">DB</div>
+			<div class="m-anim-db-ball"></div>
+			<div class="m-triangle"></div>
+			<div class="m-result">Result</div>
+		</div>
+	</article>
+
+
+<style>
+
+.m-bg-animate {
+	padding-bottom: 228px;
+	padding-top: 111px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding-left: 59px;
+	padding-right: 61px;
+	min-width: 320px;
+}
+
+.m-bg-anim-rect {
+	position: relative;
+	width: 190.81px;
+	height: 198.25px;
+	border: 1px dashed #000000;
+	box-sizing: border-box;
+}
+
+.m-anim-ball-2 {
+	animation-name: mball;
+	animation-iteration-count: infinite;
+	animation-duration: 8s;
+
+	position: relative;
+	right: -40px;
+	top: 128px;
+	background: linear-gradient(180deg, #7DB8FF 0%, #ADD2FF 99.98%, rgba(125, 184, 255, 0.0165746) 99.99%, rgba(125, 184, 255, 0.92) 100%);
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+}
+
+@keyframes mball {
+	0%, 10% {top: 128px; right: -40px;}
+	22.85% {right: 11px; top: 128px;}
+	35.7% {top: -70px; right: 12px;}
+	48.55% {top:-70px; right: -175px;}
+	61.4% {top:128px; right: -175px;}
+	74.25% {top: 128px; right: -88px;}
+	87.1% {top: 358px; right: -88px;}
+	100% {top: 358px; right: -400px;}
+}
+
+.m-border {
+	position: absolute;
+	bottom: -117px;
+	right: -27px;
+	width: 229px;
+	transform: rotate(90deg);
+	border: 0.25px dashed #000;
+}
+
+.m-border-2 {
+	position: absolute;
+	bottom: -232px;
+	right: -140px;
+	width: 229px;
+	border: 0.5px dashed #000;
+}
+
+.m-triangle {
+	position: absolute;
+	left: 64px;
+	transform: rotate(90deg);
+	bottom: -162px;
+	width: 106px;
+	height: 92px;
+	background: url(img/Polygon.svg);
+}
+
+.m-anim__tag-cloud {
+	justify-content: center;
+	align-items: center;
+	width: 120px;
+	height: 28px;
+	display: inline-flex;
+	background: #7DB8FF;
+	border-radius: 36px;
+	font-family: Comfortaa;
+	font-weight: bold;
+	font-size: 18px;
+	position: relative;
+	top: -111px;
+	left: 100px;
+	color: #FFFFFF;
+}
+
+.m-anim__tag-cloud:after {
+	content: '';
+	width: 10.48px;
+	height: 10.47px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -63px;
+	right: 25px;
+	background: #7DB8FF;
+}
+
+.m-anim__tag-cloud:before {
+	content: '';
+	right: 22px;
+	bottom: -60px;
+	position: absolute;
+	height: 62.77px;
+	background: #7DB8FF;
+	border: 2px solid #7DB8FF;
+	transform: matrix(-0.98, -0.19, 0.19, -0.98, 0, 0);
+}
+
+.m-anim__cloud {
+	position: absolute;
+	transform: rotate(90deg);
+	top: -20px;
+	right: -30px;
+	background: #D3E7FF;
+	width: 58.01px;
+	height: 37px;
+	background: #D5E8FF;
+	border: 3px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 81px;
+}
+
+.m-anim-request {
+	justify-content: center;
+	align-items: center;
+	width: 99px;
+	height: 28px;
+	display: inline-flex;
+	background: #7DB8FF;
+	border-radius: 36px;
+	font-family: Comfortaa;
+	font-weight: bold;
+	font-size: 18px;
+	position: relative;
+	top: -110px;
+	left: 0px;
+	color: #FFFFFF;
+}
+
+.m-anim-request:after {
+	content: '';
+	width: 10.48px;
+	height: 10.47px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -32px;
+	left: -18px;
+	background: #7DB8FF;
+}
+
+.m-anim-request:before {
+	content: '';
+	position: absolute;
+	top: 7px;
+	left: -6px;
+	bottom: -60px;
+	height: 49.24px;
+	background: #7DB8FF;
+	border: 2px solid #7DB8FF;
+	transform: rotate(24deg);
+}
+
+.m-anim-db {
+	justify-content: center;
+	align-items: center;
+	width: 47px;
+	height: 29px;
+	display: inline-flex;
+	background: #7DB8FF;
+	border-radius: 36px;
+	font-family: Comfortaa;
+	font-weight: bold;
+	font-size: 18px;
+	position: relative;
+	top: 215px;
+	left: 180px;
+	color: #FFFFFF;
+}
+
+.m-anim-db:after {
+	content: '';
+	width: 10.48px;
+	height: 10.47px;
+	border-radius: 50%;
+	position: absolute;
+	top: -36px;
+	left: -20px;
+	background: #7DB8FF;
+}
+
+.m-anim-db:before {
+	content: '';
+	position: absolute;
+	top: -37px;
+	left: -3px;
+	background-color: #7DB8FF;
+	border: 2px solid #7DB8FF;
+	height: 46px;
+	transform: rotate(-36deg);
+}
+
+.m-result {
+	justify-content: center;
+	align-items: center;
+	width: 83px;
+	height: 28px;
+	display: inline-flex;
+	background: #7DB8FF;
+	border-radius: 36px;
+	font-family: Comfortaa;
+	font-weight: bold;
+	font-size: 18px;
+	position: relative;
+	top: 307px;
+	left: -20px;
+	color: #FFFFFF;
+}
+
+.m-bottom-list {
+	position: absolute;
+	top: -70px;
+	left: -50px;
+	transform: rotate(90deg);
+}
+
+.m-bottom-right {
+	transform: rotate(90deg);
+	position: absolute;
+	bottom: -78px;
+	right: -57px;
+}
+
+</style>
+
+
+
+	
+<style>
+
+	.result {
+		display: inline-flex;
+		background: #7DB8FF;
+		border-radius: 36px;
+		position: relative;
+		box-sizing: border-box;
+		font-family: Comfortaa;
+		font-weight: bold;
+		font-size: 22px;
+		top: -85px;
+		width: 125px;
+		left: 467px;
+		height: 41px;
+		justify-content: center;
+		align-items: center;
+		color: #FFFFFF;
+	}
+
+	.triangle {
+		position: relative;
+		left: 394px;
+		bottom: 123px;
+		width: 106px;
+		height: 92px;
+		background: url(img/Polygon.svg);
+	}
+
+	.triangle:before {
+		position: absolute;
+		content: '';
+		width: 15px;
+		background: #7DB8FF;
+		right: 6px;
+		bottom: -2px;
+		height: 15px;
+		border-radius: 50%;
+	}
+
+	.triangle:after {
+		content: '';
+		background-color: #7DB8FF;
+		position: absolute;
+		right: 5px;
+		bottom: -50px;
+		height: 52.78px;
+		border: 2px solid #7DB8FF;
+		transform: rotate(-193.33deg);
+	}
+
+	.anim-ball-2 {
+		animation-name: ball;
+		animation-iteration-count: infinite;
+		animation-duration: 8s;
+
+		position: relative;
+		right: -260px;
+		top: 20px;
+		background: linear-gradient(180deg, #7DB8FF 0%, #ADD2FF 99.98%, rgba(125, 184, 255, 0.0165746) 99.99%, rgba(125, 184, 255, 0.92) 100%);
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+	}
+
+	@keyframes ball {
+		0%, 10% {top: 20px; right: -260px;}
+		25% {right: -260px; top: 120px;}
+		40% {top: 120px; right: 12px;}
+		60% {top:-164px; right: 12px;}
+		75% {top:-164px; right: -260px;}
+		90% {top: -10px; right: -260px;}
+		100% {top: -10px; right: -1000px;}
+	}
+
+	.border {
+		border: 0.5px dashed #000;
+		position: relative;
+		left: 100%;
+		width: 700px;
+	}
+
+	.bottom-right {
+		position: absolute;
+		top: -72px;
+		right: -98px;
+	}
+
+	.bottom-right-1 {
+		top: -70px;
+		right: -70px;
+	}
+
+	.bottom-right-2 {
+		top: -70px;
+		right: -85px;
+	}
+
+	.bottom-right-3 {
+		top: -70px;
+		right: -100px;
+	}
+	
+	.bg-animate {
+		border: 1px solid red;
+		max-width: 600px;
+		padding-left: 192px;
+		padding-top: 71px;
+		padding-bottom: 112px;
+	}
+
+	.anim-request {
+		display: inline-flex;
+		background: #7DB8FF;
+		border-radius: 36px;
+		position: relative;
+		box-sizing: border-box;
+		font-family: Comfortaa;
+		font-weight: bold;
+		font-size: 22px;
+		top: 232px;
+		width: 125px;
+		left: 33px;
+		height: 41px;
+		justify-content: center;
+		align-items: center;
+		color: #FFFFFF;
+	}
+
+	.anim-request:before {
+		content: '';
+		background-color: #7DB8FF;
+		position: absolute;
+		left: -19px;
+		top: -30px;
+		height: 52.78px;
+		border: 2px solid #7DB8FF;
+		transform: rotate(-56.67deg);
+	}
+
+	.bottom-list {
+		position: absolute;
+		bottom: -84px;
+		left: -74px;
+	}
+
+	.bg-anim-rect {
+		position: relative;
+		width: 273px;
+		height: 284px;
+		border: 1px dashed #000000;
+		box-sizing: border-box;
+	}
+
+	.anim__cloud {
+		position: relative;
+		top: -27px;
+		left: -43px;
+		background: #D3E7FF;
+		border: 7px solid #FFFFFF;
+		box-sizing: border-box;
+		border-radius: 81px;
+		width: 83px;
+		height: 53px;
+	}
+
+	.anim__tag-cloud {
+		justify-content: center;
+		align-items: center;
+		width: 150px;
+		height: 41px;
+		display: inline-flex;
+		background: #7DB8FF;
+		border-radius: 36px;
+		font-family: Comfortaa;
+		font-weight: bold;
+		font-size: 22px;
+		position: relative;
+		top: -30px;
+		left: -193px;
+		color: #FFFFFF;
+	}
+
+	.anim-db {
+		justify-content: center;
+		align-items: center;
+		width: 66px;
+		left: 376px;
+		top: -200px;
+		height: 41px;
+		position: relative;
+		color: #FFFFFF;
+		font-weight: bold;
+		display: inline-flex;
+		background: #7DB8FF;
+		border-radius: 36px;
+		font-family: Comfortaa;
+		font-size: 22px;
+	}
+
+	.anim-db:after {
+		content: '';
+		background-color: #7DB8FF;
+		position: absolute;
+		right: 85px;
+		top: 5px;
+		height: 52.78px;
+		;
+		height: 59.49px;
+		border: 2px solid #7DB8FF;
+		transform: rotate(60deg);
+	}
+
+	.anim-db:before {
+		position: absolute;
+		content: '';
+		width: 15px;
+		background: #7DB8FF;
+		left: -60px;
+		bottom: -22px;
+		height: 15px;
+		border-radius: 50%;
+	}
+
+	.anim__tag-cloud:after {
+		content: '';
+		background-color: #7DB8FF;
+		position: absolute;
+		right: -6px;
+		top: -30px;
+		height: 52.78px;
+		border: 2px solid #7DB8FF;
+		transform: matrix(-0.8, -0.6, -0.6, 0.8, 0, 0);
+	}
+
+	.anim-ball {
+		position: relative;
+		top: -102px;
+		left: -30px;
+		background: #7DB8FF;
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+	}
+
+	.anim-ball-req {
+		position: absolute;
+		top: 314px;
+		left: -20px;
+		background: #7DB8FF;
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+	}
+
+
+</style>
+
+</body>
+</html>

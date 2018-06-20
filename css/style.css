@@ -917,8 +917,8 @@ h1 {
 	font-weight: bold;
 	font-size: 18px;
 	position: relative;
-	top: 215px;
-	left: 180px;
+	top: 180px;
+	left: 160px;
 	color: #FFFFFF;
 }
 
@@ -1013,9 +1013,137 @@ h1 {
 	}
 }
 
+@media screen and (max-width: 420px) {
+	.people {
+		position: absolute;
+		left: -20px;
+	}
+
+	.people-show {
+		position: relative;
+		right: 110px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.people {
+		position: absolute;
+		left: -50px;
+	}
+}
+
 @media screen and (max-width: 600px) {
 	html {
 		font-size: 8px;
+	}
+
+	.token-details-lines {
+		padding-top: 0px !important;
+	}
+
+	.token-details-line-left .token-details-line__titile {
+		font-size: 14px;
+	}
+
+	.token-details-row-info .token-details__title {
+		font-size: 26px;
+	}
+
+	.token-details-row-info .token-details__ended {
+		font-size: 13px;
+	}
+
+	.token-details-line-right .token-details-line-left__text {
+		font-size: 13px;
+	}
+
+	.token-details-line:last-child {
+		margin-bottom: -10px;
+	}
+
+	.daily-digest__card .card__title {
+		font-size: 20px;
+	}
+
+	.daily-digest__card .card__text {
+		font-size: 12px;
+	}
+
+	.card__people .card__people-name {
+		font-size: 18px;
+	}
+
+	.card__people-accuracy .card__people-accuracy__title {
+		font-size: 12px;
+	}
+
+	.card__people-accuracy .card__people-accuracy__value {
+		font-size: 18px;
+	}
+
+	.card__people-accuracy-block .card__people-price {
+		font-size: 32px;
+	}
+
+	.card-btn .card-btn__name {
+		font-size: 10px;
+	}
+
+	.top-info__col-1 .top-info__name,
+	.top-info__col-1 .top-info__verif,
+	.hermann-link-block .hermann-link {
+		font-size: 16px;
+	}
+
+	.money-col-1 .money-block__title {
+		font-size: 14px;
+	}
+
+	.money-col-1 .money-value {
+		font-size: 28px;
+	}
+
+	.money-col-2 .money__currency {
+		font-size: 14px;
+	}
+
+	.key-block .key-row-1 {
+		font-size: 18px;
+	}
+
+	.key-rate-col .rate-eth-val,
+	.key-rate-col .rate-mnd-val,
+	.key-rate-col .rate-eth,
+	.key-rate-col .rate-mnd {
+		font-size: 24px;
+	}
+
+	.top-info__col-1 .top-info__value {
+		font-size: 28px;
+	}
+
+	.rating-left .rating__title {
+		font-size: 14px;
+	}
+
+	.rating-left_num .rating-value {
+		font-size: 28px;
+	}
+
+	.rating-left_num .rating-total {
+		font-size: 18px;
+	}
+
+	.accuracy-col .accuracy__progress-title {
+		font-size: 14px;
+	}
+
+	.accuracy-col .accuracy__progress-num {
+		font-size: 28px;
+	}
+
+	.tag-cloud__new-request {
+		display: none !important; 
 	}
 
 	section {
@@ -1143,6 +1271,11 @@ h1 {
 @media screen and (max-width: 600px) {
 	.token-details-line-left__text {
 		width: 91px !important;
+
+	}
+
+	.token-details-line-left {
+		padding-left: 0px !important;
 	}
 	
 }
@@ -1150,6 +1283,13 @@ h1 {
 @media screen and (max-width: 360px) {
 	html {
 		font-size: 7px;
+	}
+
+	.token-details {
+		height: 460px;
+		padding-left: 17px !important;
+		padding-right: 17px !important;
+		/*padding-bottom: 30px !important;*/
 	}
 
 	.content__container__list__item {
@@ -1282,7 +1422,7 @@ h1 {
 	display: flex;
 	align-items: center;
 	padding-left: 12px;
-	width: 100%;
+	width: 630px;
 	background: rgba(196, 196, 196, 0.14);
 	border-radius: 12px;
 	height: 52px;
@@ -1302,7 +1442,7 @@ h1 {
 	padding-right: 13px;
 	padding-bottom: 12px;
 	margin-top: 5px;
-	max-width: 100%;
+	width: 630px;
 	background: rgba(89, 171, 227, 0.15);
 	border-radius: 21px;
 }
@@ -2448,7 +2588,7 @@ h1 {
 
 .token-details {
 	border-radius: 34px;
-	/*overflow: hidden;*/
+	overflow: hidden;
 	position: relative;
 	padding-bottom: 24px;
 	background-size: cover;
