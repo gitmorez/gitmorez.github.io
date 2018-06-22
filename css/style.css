@@ -100,7 +100,7 @@ h1 {
 	display: flex;
 	padding: 14px;
 	outline: none;
-	width: 200px;
+	width: 210px;
 	user-select: none;
 	background: #EBEFF3;
 	border-radius: 11px;
@@ -185,7 +185,8 @@ h1 {
 	transition: top 1s;
 	left: 0;
 	width: 100%;
-	height: 100vh;
+	height: 150vh;
+	padding-bottom: 50vh;
 	background-color: #6580C5;
 }
 
@@ -667,6 +668,11 @@ h1 {
 	align-items: center;
 }
 
+.text-block__links-notify:hover {
+	transition: .5s;
+	transform: scale(1.05);
+}
+
 .text-block__links {
 	margin-top: 20px;
 	z-index: 2;
@@ -700,6 +706,11 @@ h1 {
 	color: #6580C5;
 }
 
+.full-ux:hover {
+	transition: .5s;
+	transform: scale(1.05);
+}
+
 .full-ux__img {
 	margin-right: 12px;
 }
@@ -730,7 +741,7 @@ h1 {
 	-o-animation:      mball 8s infinite; /* Opera 12+ */
 	animation: mball 8s infinite;
 
-	z-index: 0;
+	z-index: 3;
 	position: relative;
 	right: -40px;
 	top: 128px;
@@ -1391,6 +1402,11 @@ h1 {
 	height: 57px;
 	border-radius: 12px;
 	margin-top: 15px;
+}
+
+.tag-cloud__new-request:hover {
+	transition: .5s;
+	transform: scale(1.05);
 }
 
 .plus-icon__vert,
@@ -2417,6 +2433,11 @@ h1 {
 	margin-top: 21px;
 }
 
+.ethereum-pay:hover {
+	transition: .5s;
+	transform: scale(1.06);
+}
+
 .ethereum-pay-text {
 	position: relative;
 	right: 4px;
@@ -3162,7 +3183,6 @@ h1 {
 	font-weight: 500; 
 }
 
-
 /*   анимации появления  */
 
 
@@ -3232,100 +3252,115 @@ h1 {
 
 .footer-menu-anim {
 	bottom: -1300px;
-	transition: bottom 1s;
+	opacity: 0;
+	transition: bottom 1s, opacity 2.7s;
 	position: relative;
 }
 
 .roadmap-anim {
 	bottom: -1300px;
-	transition: bottom 1s;
+	opacity: 0;
+	transition: bottom 1s, opacity 2.7s;
 	position: relative;
 }
 
 .ethereum-row-2-anim {
 	bottom: -1300px;
-	transition: bottom 1s;
+	opacity: 0;
+	transition: bottom 1s, opacity 2.7s;
 	position: relative;
 }
 
 .card-evgeny-anim {
 	bottom: -1300px;
 	right: -1300px;
-	transition: right 1s;
+	opacity: 0;
+	transition: right 1s, opacity 2.7s;
 	position: relative;
 }
 
 .card-andrey-anim {
 	bottom: -1300px;
-	transition: bottom 1s;
+	opacity: 0;
+	transition: bottom 1s, opacity 2.7s;
 	position: relative;
 }
 
 .daily-digest-col-anim {
 	bottom: -1300px;
 	left: -1300px;
-	transition: left 1s;
+	opacity: 0;
+	transition: left 1s, opacity 2.7s;
 	position: relative;
 }
 
 .new-are__text-block-bot-anim {
 	bottom: -1300px;
-	transition: bottom 1s;
+	opacity: 0;
+	transition: bottom 1s, opacity 2.7s;
 	position: relative;
 }
 
 .footer__social-links-anim {
 	bottom: -1300px;
 	left: -1300px;
-	transition: left 1s;
+	opacity: 0;
+	transition: left 1s, opacity 2.7s;
 	position: relative;
 }
 
 .team-col-1-anim {
 	bottom: -1300px;
 	left: -1300px;
-	transition: left 1s;
+	opacity: 0;
+	transition: left 1s, opacity 2.7s;
 	position: relative;
 }
 
 .verification__text-left-anim {
 	bottom: -1300px;
 	left: -1300px;
-	transition: left 1s;
+	opacity: 0;
+	transition: left 1s, opacity 2.7s;
 	position: relative;
 }
 
 .verification-col-1-anim {
 	bottom: -1300px;
 	left: -1300px;
-	transition: left 1s;
+	opacity: 0;
+	transition: left 1s, opacity 2.7s;
 	position: relative;
 }
 
 .integration-col-1-anim {
 	bottom: -1300px;
 	left: -1300px;
-	transition: left 1s;
+	opacity: 0;
+	transition: left 1s, opacity 2.7s;
 	position: relative;
 }
 
 .blockchain-col-1-anim {
 	bottom: -1300px;
 	left: -1300px;
-	transition: left 1s;
+	opacity: 0;
+	transition: left 1s, opacity 2.7s;
 	position: relative;
 }
 
 .tag-clound-wrap-anim {
 	bottom: -1300px;
 	left: -1300px;
-	transition: left 1s;
+	opacity: 0;
+	transition: left 1s, opacity 2.7s;
 	position: relative;
 }
 
 .new-are__text-block-anim {
 	bottom: -1300px;
-	transition: left 1s;
+	opacity: 0;
+	transition: left 1s, opacity 2.7s;
 	left: -1300px;
 	position: relative;
 }
@@ -3334,55 +3369,63 @@ h1 {
 .people-anim {
 	bottom: -1300px;
 	right: -1300px;
-	transition: right 1s;
+	opacity: 0;
+	transition: right 1s, opacity 2.7s;
 	position: relative; 
 }
 
 .blockchain-col-2-anim {
 	bottom: -1300px;
 	right: -1300px;
-	transition: right 1s;
+	opacity: 0;
+	transition: right 1s, opacity 2.7s;
 	position: relative; 
 }
 
 .desktop-bg-animate-anim {
 	right: -1300px;
-	transition: 1s;
+	opacity: 0;
+	transition: right 1s, opacity 2.7s;
 	position: relative;
 }
 
 .integration-col-2-anim {
 	bottom: -1300px;
 	right: -1300px;
-	transition: right 1s;
+	opacity: 0;
+	transition: right 1s, opacity 2.7s;
 	position: relative;
 }
 
 .verification-col-2-anim {
 	bottom: -1300px;
 	right: -1300px;
-	transition: right 1s;
+	opacity: 0;
+	transition: right 1s, opacity 2.7s;
 	position: relative;
 }
 
 .ethereum-money-anim {
 	bottom: -1300px;
 	right: -1300px;
-	transition: right 1s;
+	opacity: 0;
+	transition: right 1s, opacity 2.7s;
 	position: relative;
 }
 
 .team-col-2-anim {
 	bottom: -1300px;
 	right: -1300px;
-	transition: right 1s;
+	opacity: 0;
+	transition: right 1s, opacity 2.7s;
 	position: relative;
 }
 
 .footer-lang-anim {
 	bottom: -1300px;
 	right: -1300px;
-	transition: right 1s;
+	opacity: 0;
+	transition: right 1s, opacity 2.7s;
 	position: relative;
 }
 
