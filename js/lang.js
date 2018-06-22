@@ -9,6 +9,7 @@ var text = document.querySelector(".text-block");
 var def_lang_block = document.querySelector(".def-lang-block");
 var is_open = false;
 var btn_text = document.querySelector(".lang-active-text");
+var btn_text2 = document.querySelector(".footer-lang-active-text");
 
 btn.onclick = function () {
 	if (listStyle.display == 'none') {
@@ -25,7 +26,7 @@ btn.onclick = function () {
 		for (var i = 0; i < span.length; i++) {
 			span[i].style.color = '#B1B1B4';
 		}
-		btn.style.width = '200px';
+		// btn.style.width = '200px';
 		list.style.display = 'none';
 		btn_text.style.position = 'relative';
 		btn_text.style.bottom = '11px';
@@ -37,7 +38,7 @@ btn.onclick = function () {
 		list.style.borderTopLeftRadius = '11px';
 		list.style.borderTopRightRadius = '11px';
 		list.style.display = 'flex';
-		btn.style.width = '210px';
+		// btn.style.width = '210px';
 		btn.style.borderBottomLeftRadius = '0px';
 		btn.style.borderBottomRightRadius = '0px';
 		for (var i = 0; i < span.length; i++) {
@@ -76,10 +77,10 @@ document.querySelector(".lang__item-en").onclick = function () {
 	document.querySelector(".lang-active-img").setAttribute( 'src', 'img/united-kingdom.svg' );
 }
 
-document.querySelector(".lang__item-jap").onclick = function () {
-	document.querySelector(".lang-active-text").innerText = document.querySelector(".lang__item-jap").innerText;
-	document.querySelector(".lang-active-img").setAttribute( 'src', 'img/japan.svg' );
-}
+// document.querySelector(".lang__item-jap").onclick = function () {
+// 	document.querySelector(".lang-active-text").innerText = document.querySelector(".lang__item-jap").innerText;
+// 	document.querySelector(".lang-active-img").setAttribute( 'src', 'img/japan.svg' );
+// }
 
 document.querySelector(".lang__item-kor").onclick = function () {
 	document.querySelector(".lang-active-text").innerText = document.querySelector(".lang__item-kor").innerText;
@@ -116,6 +117,8 @@ btn2.onclick = function () {
 			span[i].style.color = '#B1B1B4';
 		}
 		btn.style.width = '200px';
+		btn_text2.style.position = 'relative';
+		btn_text2.style.bottom = '11px';
 		list.style.display = 'none';
 	} else {
 		def_lang_block.style.display = 'none';
@@ -142,11 +145,6 @@ document.querySelector(".footer-lang__item-rus").onclick = function () {
 document.querySelector(".footer-lang__item-en").onclick = function () {
 	document.querySelector(".footer-lang-active-text").innerText = document.querySelector(".footer-lang__item-en").innerText;
 	document.querySelector(".footer-lang-active-img").setAttribute( 'src', 'img/united-kingdom.svg' );
-}
-
-document.querySelector(".footer-lang__item-jap").onclick = function () {
-	document.querySelector(".footer-lang-active-text").innerText = document.querySelector(".footer-lang__item-jap").innerText;
-	document.querySelector(".footer-lang-active-img").setAttribute( 'src', 'img/japan.svg' );
 }
 
 document.querySelector(".footer-lang__item-kor").onclick = function () {
