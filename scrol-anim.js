@@ -32,8 +32,10 @@ element_right[8] = document.querySelector(".footer-lang-anim");
 if ( document.documentElement.clientWidth >= 1561 ) {
 	element_left[8].style.left = '0px';
 	element_left[8].style.bottom = '0px';
+	element_left[8].style.opacity = '1';
 } else {
 	element_left[8].style.left = '0px';
+	element_left[8].style.opacity = '1';
 	element_left[8].style.bottom = '0px';
 	element_left[8].style.transition = 'bottom 1s';
 	element_left[8].style.bottom = '0px';
@@ -42,6 +44,7 @@ if ( document.documentElement.clientWidth >= 1561 ) {
 
 if ( document.documentElement.clientWidth >= 1561 ) {
 	element_right[3].style.right = '0px';
+	element_right[3].style.opacity = '1';
 }
 
 window.onscroll = function () {
@@ -50,357 +53,420 @@ window.onscroll = function () {
 
 	if ( scrollTop >= 180 && w >= 1561) {
 		element_bot[0].style.bottom = '0px';
+		element_bot[0].style.opacity = '1';
 
 	}
 
-	if ( scrollTop >= 1800 && w >= 1561) {
+	if ( scrollTop >= 1700 && w >= 1561) {
 		element_bot[1].style.bottom = '0px';
+		element_bot[1].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 3500 && w >= 1561) {
+	if ( scrollTop >= 3300 && w >= 1561) {
 		element_bot[2].style.bottom = '0px';
+		element_bot[2].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 4100 && w >= 1561) {
+	if ( scrollTop >= 4000 && w >= 1561) {
 		element_bot[3].style.bottom = '0px';
+		element_bot[3].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 5380 && w >= 1561) {
+	if ( scrollTop >= 5200 && w >= 1561) {
 		element_bot[4].style.bottom = '0px';
+		element_bot[4].style.opacity = '1';
 	}
 
 
 
-	if ( scrollTop >= 650 && w <= 1560 && w >= 1061 ) {
+	if ( scrollTop >= 500 && w <= 1560 && w >= 1061 ) {
 		element_bot[0].style.bottom = '0px';
+		element_bot[0].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 2170 && w <= 1560 && w >= 1061 ) {
+	if ( scrollTop >= 2000 && w <= 1560 && w >= 1061 ) {
 		element_bot[1].style.bottom = '0px';
+		element_bot[1].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 3845 && w <= 1560 && w >= 1061 ) {
+	if ( scrollTop >= 3700 && w <= 1560 && w >= 1061 ) {
 		element_bot[2].style.bottom = '0px';
+		element_bot[2].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 4545 && w <= 1560 && w >= 1061 ) {
+	if ( scrollTop >= 4400 && w <= 1560 && w >= 1061 ) {
 		element_bot[3].style.bottom = '0px';
+		element_bot[3].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 5960 && w <= 1560 && w >= 1061) {
+	if ( scrollTop >= 5600 && w <= 1560 && w >= 1061) {
 		element_bot[4].style.bottom = '0px';
+		element_bot[4].style.opacity = '1';
 	}
 
 
 
 
-	if ( scrollTop >= 800 && w <= 1061 ) {
+	if ( scrollTop >= 700 && w <= 1061 ) {
 		element_bot[0].style.bottom = '0px';
+		element_bot[0].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 3160 && w <= 1061 ) {
+	if ( scrollTop >= 2700 && w <= 1061 ) {
 		element_bot[1].style.bottom = '0px';
+		element_bot[1].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 5250 && w <= 1061 ) {
+	if ( scrollTop >= 4900 && w <= 1061 ) {
 		element_bot[2].style.bottom = '0px';
+		element_bot[2].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 5855 && w <= 1061 ) {
+	if ( scrollTop >= 5500 && w <= 1061 ) {
 		element_bot[3].style.bottom = '0px';
+		element_bot[3].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 7160 && w <= 1061) {
+	if ( scrollTop >= 6915 && w <= 1061) {
 		element_bot[4].style.bottom = '0px';
+		element_bot[4].style.opacity = '1';
 	}
 
 
 
 
 
-	if ( scrollTop >= 1250 && w >= 1561) {
+	if ( scrollTop >= 1100 && w >= 1561) {
 		element_left[6].style.left = '0px';
 		element_left[6].style.bottom = '0px';
+		element_left[6].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 750 && w >= 1561 ) {
+	if ( scrollTop >= 600 && w >= 1561 ) {
 		element_left[7].style.left = '0px';
 		element_left[7].style.bottom = '0px';
+		element_left[7].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 1800 && w >= 1561 ) {
+	if ( scrollTop >= 1700 && w >= 1561 ) {
 		element_left[0].style.left = '0px';
 		element_left[0].style.bottom = '0px';
+		element_left[0].style.opacity = '1';
 		anim_box[1].style.opacity = '1';
 		anim_box[2].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 2650 && w >= 1561 ) {
+	if ( scrollTop >= 2550 && w >= 1561 ) {
 		element_left[4].style.left = '0px';
 		element_left[4].style.bottom = '0px';
+		element_left[4].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 2255 && w >= 1561 ) {
+	if ( scrollTop >= 2100 && w >= 1561 ) {
 		element_left[5].style.left = '0px';
 		element_left[5].style.bottom = '0px';
+		element_left[5].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 3055 && w >= 1561 ) {
+	if ( scrollTop >= 3000 && w >= 1561 ) {
 		element_left[3].style.left = '0px';
 		element_left[3].style.bottom = '0px';
+		element_left[3].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 4650 && w >= 1561 ) {
+	if ( scrollTop >= 4500 && w >= 1561 ) {
 		element_left[2].style.left = '0px';
 		element_left[2].style.bottom = '0px';
+		element_left[2].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 5380 && w >= 1561 ) {
+	if ( scrollTop >= 5200 && w >= 1561 ) {
 		element_left[1].style.bottom = '0px';
 		element_left[1].style.left = '0px';
+		element_left[1].style.opacity = '1';
 	}
 
 
 
-	if ( scrollTop >= 1590 && w <= 1560 && w >= 1061 ) {
+	if ( scrollTop >= 1500 && w <= 1560 && w >= 1061 ) {
 		element_left[6].style.left = '0px';
 		element_left[6].style.bottom = '0px';
+		element_left[6].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 1077 && w <= 1560 && w >= 1061 ) {
+	if ( scrollTop >= 1000 && w <= 1560 && w >= 1061 ) {
 		element_left[7].style.left = '0px';
 		element_left[7].style.bottom = '0px';
+		element_left[7].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 2170 && w <= 1560 && w >= 1061 ) {
+	if ( scrollTop >= 2000 && w <= 1560 && w >= 1061 ) {
 		element_left[0].style.left = '0px';
 		element_left[0].style.bottom = '0px';
+		element_left[0].style.opacity = '1';
 		anim_box[1].style.opacity = '1';
 		anim_box[2].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 3076 && w <= 1560 && w >= 1061 ) {
+	if ( scrollTop >= 3000 && w <= 1560 && w >= 1061 ) {
 		element_left[4].style.left = '0px';
 		element_left[4].style.bottom = '0px';
+		element_left[4].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 2660 && w <= 1560 && w >= 1061 ) {
+	if ( scrollTop >= 2500 && w <= 1560 && w >= 1061 ) {
 		element_left[5].style.left = '0px';
 		element_left[5].style.bottom = '0px';
+		element_left[5].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 3485 && w <= 1560 && w >= 1061 ) {
+	if ( scrollTop >= 3300 && w <= 1560 && w >= 1061 ) {
 		element_left[3].style.left = '0px';
 		element_left[3].style.bottom = '0px';
+		element_left[3].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 5015 && w <= 1560 && w >= 1061 ) {
+	if ( scrollTop >= 4900 && w <= 1560 && w >= 1061 ) {
 		element_left[2].style.left = '0px';
 		element_left[2].style.bottom = '0px';
+		element_left[2].style.opacity = '1';
 
 	}
 
-	if ( scrollTop >= 5760 && w <= 1560 && w >= 1061 ) {
-		element_left[1].style.transition = 'bottom 1s';
+	if ( scrollTop >= 5600 && w <= 1560 && w >= 1061 ) {
+		element_left[1].style.transition = 'bottom 1s, opacity 2.7s';
 		element_left[1].style.bottom = '0px';
 		element_left[1].style.left = '0px';
+		element_left[1].style.opacity = '1';
 	}
 
 
 
+
+	if ( scrollTop >= 2000 && w <= 1061 ) {
+		element_left[6].style.transition = 'bottom 1s, opacity 2.7s';
+		element_left[6].style.bottom = '0px';
+		element_left[6].style.left = '0px';
+		element_left[6].style.opacity = '1';
+	}
+
+	if ( scrollTop >= 1000 && w <= 1061 ) {
+		element_left[7].style.transition = 'bottom 1s, opacity 2.7s';
+		element_left[7].style.bottom = '0px';
+		element_left[7].style.left = '0px';
+		element_left[7].style.opacity = '1';
+	}
 
 	if ( scrollTop >= 2400 && w <= 1061 ) {
-		element_left[6].style.transition = 'bottom 1s';
-		element_left[6].style.bottom = '0px';
-		element_left[6].style.left = '0px';
-	}
-
-	if ( scrollTop >= 1200 && w <= 1061 ) {
-		element_left[7].style.transition = 'bottom 1s';
-		element_left[7].style.bottom = '0px';
-		element_left[7].style.left = '0px';
-	}
-
-	if ( scrollTop >= 2780 && w <= 1061 ) {
-		element_left[0].style.transition = 'bottom 1s';
+		element_left[0].style.transition = 'bottom 1s, opacity 2.7s';
 		element_left[0].style.bottom = '0px';
 		element_left[0].style.left = '0px';
 		anim_box[1].style.opacity = '1';
+		element_left[0].style.opacity = '1';
 		anim_box[2].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 4500 && w <= 1061 ) {
-		element_left[4].style.transition = 'bottom 1s';
+	if ( scrollTop >= 4000 && w <= 1061 ) {
+		element_left[4].style.transition = 'bottom 1s, opacity 2.7s';
 		element_left[4].style.bottom = '0px';
 		element_left[4].style.left = '0px';
+		element_left[4].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 3850 && w <= 1061 ) {
-		element_left[5].style.transition = 'bottom 1s';
+	if ( scrollTop >= 3300 && w <= 1061 ) {
+		element_left[5].style.transition = 'bottom 1s, opacity 2.7s';
 		element_left[5].style.bottom = '0px';
 		element_left[5].style.left = '0px';
+		element_left[5].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 4730 && w <= 1061 ) {
-		element_left[3].style.transition = 'bottom 1s';
+	if ( scrollTop >= 4200 && w <= 1061 ) {
+		element_left[3].style.transition = 'bottom 1s, opacity 2.7s';
 		element_left[3].style.bottom = '0px';
 		element_left[3].style.left = '0px';
+		element_left[3].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 6220 && w <= 1061 ) {
-		element_left[2].style.transition = 'bottom 1s';
+	if ( scrollTop >= 5900 && w <= 1061 ) {
+		element_left[2].style.transition = 'bottom 1s, opacity 2.7s';
 		element_left[2].style.bottom = '0px';
 		element_left[2].style.left = '0px';
+		element_left[2].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 7220 && w <= 1099 ) {
-		element_left[1].style.transition = 'bottom 1s';
+	if ( scrollTop >= 6860 && w <= 1099 ) {
+		element_left[1].style.transition = 'bottom 1s, opacity 2.7s';
 		element_left[1].style.bottom = '0px';
 		element_left[1].style.left = '0px';
+		element_left[1].style.opacity = '1';
 	}
 
 
 
 
-	if ( scrollTop >= 3055 && w >= 1561) {
+	if ( scrollTop >= 3000 && w >= 1561) {
 		element_right[6].style.bottom = '0px';
 		element_right[6].style.right = '0px';
+		element_right[6].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 4650 && w >= 1561 ) {
+	if ( scrollTop >= 4500 && w >= 1561 ) {
 		element_right[7].style.bottom = '0px';
 		element_right[7].style.right = '0px';
+		element_right[7].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 1800 && w >= 1561 ) {
+	if ( scrollTop >= 1700 && w >= 1561 ) {
 		element_right[0].style.bottom = '0px';
 		element_right[0].style.right = '0px';
+		element_right[0].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 2255 && w >= 1561 ) {
+	if ( scrollTop >= 2100 && w >= 1561 ) {
 		element_right[4].style.bottom = '0px';
 		element_right[4].style.right = '0px';
+		element_right[4].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 2650 && w >= 1561 ) {
+	if ( scrollTop >= 2550 && w >= 1561 ) {
 		element_right[5].style.bottom = '0px';
 		element_right[5].style.right = '0px';
+		element_right[5].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 1250 && w >= 1561 ) {
+	if ( scrollTop >= 1100 && w >= 1561 ) {
 		element_right[2].style.bottom = '0px';
 		element_right[2].style.right = '0px';
+		element_right[2].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 750 && w >= 1561 ) {
+	if ( scrollTop >= 600 && w >= 1561 ) {
 		element_right[1].style.bottom = '0px';
 		element_right[1].style.right = '0px';
+		element_right[1].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 5380 && w >= 1561 ) {
+	if ( scrollTop >= 5200 && w >= 1561 ) {
 		element_right[8].style.bottom = '0px';
 		element_right[8].style.right = '0px';
+		element_right[8].style.opacity = '1';
 	}
 
 
 
 
-	if ( scrollTop >= 3480 && w <= 1560 && w >= 1061) {
+	if ( scrollTop >= 3300 && w <= 1560 && w >= 1061) {
 		element_right[6].style.bottom = '0px';
 		element_right[6].style.right = '0px';
+		element_right[6].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 5020 && w <= 1560 && w >= 1061 ) {
+	if ( scrollTop >= 4900 && w <= 1560 && w >= 1061 ) {
 		element_right[7].style.bottom = '0px';
 		element_right[7].style.right = '0px';
+		element_right[7].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 2170 && w <= 1560 && w >= 1061 ) {
+	if ( scrollTop >= 2000 && w <= 1560 && w >= 1061 ) {
 		element_right[0].style.bottom = '0px';
 		element_right[0].style.right = '0px';
+		element_right[0].style.opacity = '1';
 	}
 
 	if ( scrollTop >= 2660 && w <= 1560 && w >= 1061 ) {
 		element_right[8].style.bottom = '0px';
 		element_right[8].style.right = '0px';
+		element_right[8].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 3070 && w <= 1560 && w >= 1061 ) {
+	if ( scrollTop >= 3000 && w <= 1560 && w >= 1061 ) {
 		element_right[5].style.bottom = '0px';
 		element_right[5].style.right = '0px';
+		element_right[5].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 1590 && w <= 1560 && w >= 1061 ) {
+	if ( scrollTop >= 1500 && w <= 1560 && w >= 1061 ) {
 		element_right[2].style.bottom = '0px';
 		element_right[2].style.right = '0px';
+		element_right[2].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 1077 && w <= 1560 && w >= 1061 ) {
+	if ( scrollTop >= 1000 && w <= 1560 && w >= 1061 ) {
 		element_right[1].style.bottom = '0px';
 		element_right[1].style.right = '0px';
+		element_right[1].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 2660 && w <= 1560 && w >= 1061 ) {
+	if ( scrollTop >= 2500 && w <= 1560 && w >= 1061 ) {
 		element_right[4].style.bottom = '0px';
 		element_right[4].style.right = '0px';
+		element_right[4].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 5380 && w <= 1560 && w >= 1061 ) {
+	if ( scrollTop >= 5600 && w <= 1560 && w >= 1061 ) {
 		element_right[8].style.right = '0px';
 		element_right[8].style.bottom = '0px';
-		element_right[8].style.transition = 'bottom 1s';
+		element_right[8].style.transition = 'bottom 1s, opacity 2.7s';
+		element_right[8].style.opacity = '1';
 	}
 
 
 
 
-	if ( scrollTop >= 5030 && w <= 1061) {
+	if ( scrollTop >= 4400 && w <= 1061) {
 		element_right[6].style.bottom = '0px';
-		element_right[6].style.transition = 'bottom 1s';
+		element_right[6].style.transition = 'bottom 1s, opacity 2.7s';
 		element_right[6].style.right = '0px';
+		element_right[6].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 6250 && w <= 1061 ) {
+	if ( scrollTop >= 5930 && w <= 1061 ) {
 		element_right[7].style.bottom = '0px';
-		element_right[7].style.transition = 'bottom 1s';
+		element_right[7].style.transition = 'bottom 1s, opacity 2.7s';
 		element_right[7].style.right = '0px';
+		element_right[7].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 3500 && w <= 1061 ) {
+	if ( scrollTop >= 3000 && w <= 1061 ) {
 		element_right[0].style.bottom = '0px';
-		element_right[0].style.transition = 'bottom 1s';
+		element_right[0].style.transition = 'bottom 1s, opacity 2.7s';
 		element_right[0].style.right = '0px';
+		element_right[0].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 4060 && w <= 1061 ) {
+	if ( scrollTop >= 3600 && w <= 1061 ) {
 		element_right[4].style.bottom = '0px';
-		element_right[4].style.transition = 'bottom 1s';
+		element_right[4].style.transition = 'bottom 1s, opacity 2.7s';
 		element_right[4].style.right = '0px';
+		element_right[4].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 4280 && w <= 1061 ) {
+	if ( scrollTop >= 3800 && w <= 1061 ) {
 		element_right[5].style.bottom = '0px';
-		element_right[5].style.transition = 'bottom 1s';
+		element_right[5].style.transition = 'bottom 1s, opacity 2.7s';
 		element_right[5].style.right = '0px';
+		element_right[5].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 2170 && w <= 1061 ) {
+	if ( scrollTop >= 1600 && w <= 1061 ) {
 		element_right[2].style.bottom = '0px';
 		element_right[2].style.right = '0px';
-		element_right[2].style.transition = 'bottom 1s';
+		element_right[2].style.transition = 'bottom 1s, opacity 2.7s';
+		element_right[2].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 1700 && w <= 1061 ) {
+	if ( scrollTop >= 1300 && w <= 1061 ) {
 		element_right[1].style.bottom = '0px';
-		element_right[1].style.transition = 'bottom 1s';
+		element_right[1].style.transition = 'bottom 1s, opacity 2.7s';
 		element_right[1].style.right = '0px';
+		element_right[1].style.opacity = '1';
 	}
 
-	if ( scrollTop >= 5380 && w <= 1061 ) {
+	if ( scrollTop >= 5310 && w <= 1061 ) {
 		element_right[8].style.right = '0px';
 		element_right[8].style.bottom = '0px';
-		element_right[8].style.transition = 'bottom 1s';
-
+		element_right[8].style.transition = 'bottom 1s, opacity 2.7s';
+		element_right[8].style.opacity = '1';
 	}
 }
 
