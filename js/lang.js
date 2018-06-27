@@ -49,7 +49,7 @@ btn.onclick = function () {
 }
 
 m_menu_bnt.onclick = function () {
-	if (m_menuStyle.top == '-2000px') {
+	if (m_menuStyle.top == '-2200px') {
 		is_open = true;
 	} else {
 		is_open = false;
@@ -58,7 +58,7 @@ m_menu_bnt.onclick = function () {
 	if (is_open) {
 		m_menu.style.top = '0px';
 	} else {
-		m_menu.style.top = '-2000px';
+		m_menu.style.top = '-2200px';
 	}
 }
 
