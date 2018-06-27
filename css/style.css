@@ -75,6 +75,17 @@ h1 {
 	font-weight: bold;
 }
 
+.active-m-nav__item {
+	color: #6580C5 !important;
+	display: inline-flex;
+	background-color: #fff;
+	border-radius: 15px;
+	width: 90px;
+	position: relative;
+	left: 20px;
+	padding: 5px 0;
+}
+
 .header {
 	background-color: #fff;
 	display: flex;
@@ -181,7 +192,7 @@ h1 {
 	justify-content: center;
 	display: flex;
 	position: absolute;
-	top: -2000px;
+	top: -2200px;
 	transition: top 1s;
 	left: 0;
 	width: 100%;
@@ -319,17 +330,17 @@ h1 {
 @media screen and (max-width: 414px) {
 	.content__container__list__item:nth-child(5) {
 		position: relative;
-		top: 0px;
+		top: 1px;
 	}
 
 	.content__container__list__item:nth-child(6) {
 		position: relative;
-		top: 0px;
+		top: 1px;
 	}
 
 	.content__container__list__item:nth-child(7) {
 		position: relative;
-		top: 1px;
+		top: 2px;
 	}
 }
 
@@ -400,7 +411,8 @@ h1 {
 }
 
 @keyframes ball {
-	0%, 10% {top: 20px; right: -260px;}
+	0% {top: 20px; right: -260px; opacity: 0;}
+	10% {top: 20px; right: -260px; opacity: 1;}
 	25% {right: -260px; top: 120px;}
 	40% {top: 120px; right: 12px;}
 	60% {top:-164px; right: 12px;}
@@ -640,7 +652,7 @@ h1 {
 	margin-bottom: 26px;
 	font-weight: bold;
 	line-height: 3.4rem;
-	font-size: 3.4rem;
+	font-size: 3.2rem;
 	color: #657CB7;
 	z-index: 2;
 }
@@ -741,7 +753,7 @@ h1 {
 	-o-animation:      mball 8s infinite; /* Opera 12+ */
 	animation: mball 8s infinite;
 
-	z-index: 3;
+	z-index: 1;
 	position: relative;
 	right: -40px;
 	top: 128px;
@@ -752,7 +764,8 @@ h1 {
 }
 
 @-webkit-keyframes mball {
-  0%, 10% {top: 128px; right: -40px;}
+  	0% {top: 128px; right: -40px; opacity: 0}
+	10% {top: 128px; right: -40px; opacity: 1}
 	22.85% {right: 11px; top: 128px;}
 	35.7% {top: -70px; right: 12px;}
 	48.55% {top:-70px; right: -175px;}
@@ -763,7 +776,8 @@ h1 {
 }
 
 @-moz-keyframes mball {
-  0%, 10% {top: 128px; right: -40px;}
+  	0% {top: 128px; right: -40px; opacity: 0}
+	10% {top: 128px; right: -40px; opacity: 1}
 	22.85% {right: 11px; top: 128px;}
 	35.7% {top: -70px; right: 12px;}
 	48.55% {top:-70px; right: -175px;}
@@ -774,7 +788,8 @@ h1 {
 }
 
 @-o-keyframes mball {
-  0%, 10% {top: 128px; right: -40px;}
+  	0% {top: 128px; right: -40px; opacity: 0}
+	10% {top: 128px; right: -40px; opacity: 1}
 	22.85% {right: 11px; top: 128px;}
 	35.7% {top: -70px; right: 12px;}
 	48.55% {top:-70px; right: -175px;}
@@ -786,7 +801,8 @@ h1 {
 
 
 @keyframes mball {
-	0%, 10% {top: 128px; right: -40px;}
+	0% {top: 128px; right: -40px; opacity: 0}
+	10% {top: 128px; right: -40px; opacity: 1}
 	22.85% {right: 11px; top: 128px;}
 	35.7% {top: -70px; right: 12px;}
 	48.55% {top:-70px; right: -175px;}
@@ -1183,7 +1199,7 @@ h1 {
 	font-weight: bold;
 	padding-bottom: 5px;
 	line-height: 3.8rem;
-	font-size: 3.4rem;
+	font-size: 3.2rem;
 	color: #657CB7;
 	z-index: 2;
 
@@ -1289,6 +1305,13 @@ h1 {
 		padding-left: 0px !important;
 	}
 	
+}
+
+@media screen and (max-width: 450px) {
+	.new-are__text-block-anim {
+		padding-left: 18px;
+		padding-right: 18px;
+	}
 }
 
 @media screen and (max-width: 360px) {
