@@ -235,6 +235,7 @@ body {
 	}
 
 	.news-product__title-block {
+		max-width: 275px;
 		align-items: center;
 	}
 }
