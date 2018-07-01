@@ -39,11 +39,27 @@ function detectswipe(el,func) {
 }
 
 function myfunction(el,d) {
-  if (d == "l") {
-    next();
+  if (el == 'swipe-popular' && d == "l") {
+    next(0);
   }
 
-  if (d == "r") {
-    prev();
+  if (el == 'swipe-popular' && d == "r") {
+    prev(0);
+  }
+
+  if (el == 'swipe-news' && d == "l") {
+    next(1);
+  }
+
+  if (el == 'swipe-news' && d == "r") {
+    prev(1);
+  }
+
+  if (el == 'swipe-discount' && d == "l") {
+    next(2);
+  }
+
+  if (el == 'swipe-discount' && d == "r") {
+    prev(2);
   }
 }
