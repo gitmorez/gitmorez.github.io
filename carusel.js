@@ -1,9 +1,13 @@
-var prev 	 = document.querySelector(".next");
-var next 	 = document.querySelector(".prev");
-var carusel  = document.querySelector(".carusel-block");
-var position = 0;
+window.onload = function() {
+	load();
+}
 
-next.onclick = function () {
+var prevbtn 	 = document.querySelector(".next");
+var nextbtn 	 = document.querySelector(".prev");
+var carusel  	 = document.querySelector(".carusel-block");
+var position 	 = 0;
+
+function next() {
 	if (position <= 2023 && document.documentElement.clientWidth > 1300) {
 		position += 289; 
 		carusel.style.right = position + 'px';
@@ -25,18 +29,21 @@ next.onclick = function () {
 	}
 }
 
-prev.onclick = function () {
-	if (position > 0) {
-	position -= 289; 
+function load() {
+	position = 289;
 	carusel.style.right = position + 'px';
+	position = 0;
+	carusel.style.right = position + 'px';
+}
+
+function prev() {
+	if (position > 0) {
+		position -= 289; 
+		carusel.style.right = position + 'px';
 	}
-
-	// if (position > 0 && document.documentElement.clientWidth > 1050 && document.documentElement.clientWidth <= 1300) {
-	// position -= 289; 
-	// carusel.style.right = position + 'px';
-	// }
 }
 
-function getStyle(elem) {
-  return window.getComputedStyle ? getComputedStyle(elem) : elem.currentStyle;
-}
+prevbtn.addEventListener("click", prev);
+nextbtn.addEventListener("click", next)
+
+detectswipe('swipe', myfunction);
