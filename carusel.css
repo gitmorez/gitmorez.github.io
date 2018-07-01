@@ -207,6 +207,14 @@ body {
 	.news-product__title-block {
 		max-width: 840px;
 	}
+	
+	.prev {
+		right: -55px;
+	}
+
+	.next {
+		left: -55px;
+	}
 }
 
 @media screen and (max-width: 1050px) {
